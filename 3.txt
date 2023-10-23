@@ -1,0 +1,13 @@
+int main() {
+    setlocale(0,"");
+    int day;
+    cout << "Введите кол-во дней в году";
+    cin >> day;
+    if (day == 366) {
+        cout << "Високосный год";
+    }
+    else {
+        cout << "Год не високосный";
+    }
+    return 0;
+}

@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    setlocale(0, "");
+    int number;
+    cout << "Введите число: ";
+    cin >> number;
+
+    bool isDivisible = false;
+
+    for (int i = 1; i <= number; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            isDivisible = true;
+            break;
+        }
+    }
+
+    if (isDivisible) {
+        cout << number << " является кратным 3 и 5 одновременно.\n";
+    }
+    else {
+        cout << number << " не является кратным 3 и 5 одновременно.\n";
+    }
+
+    return 0;
+}
